@@ -1,0 +1,11 @@
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use Alura\Doctrine\Helper\EntityManagerFactory;
+
+
+$entityManagerFactory = new EntityManagerFactory();
+$entityManager = $entityManagerFactory->getEntituManager();
+
+var_dump($entityManager->getConnection());
